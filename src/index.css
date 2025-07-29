@@ -2,41 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* DevVerse Design System - Gamified Learning Platform */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core backgrounds */
+    --background: 240 10% 4%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Cards and surfaces */
+    --card: 240 8% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 240 8% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Primary - Coding blue with electric accent */
+    --primary: 224 76% 48%;
     --primary-foreground: 210 40% 98%;
+    --primary-glow: 224 100% 68%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Deep purple for gamification */
+    --secondary: 271 81% 56%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted tones */
+    --muted: 240 4% 16%;
+    --muted-foreground: 215 20.2% 65.1%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Success green for achievements */
+    --accent: 142 76% 36%;
+    --accent-foreground: 210 40% 98%;
 
+    /* Warning - Coding orange */
+    --warning: 38 92% 50%;
+    --warning-foreground: 240 10% 4%;
+
+    /* Destructive */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 240 6% 20%;
+    --input: 240 6% 16%;
+    --ring: 224 76% 48%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(224 76% 48%), hsl(271 81% 56%));
+    --gradient-hero: linear-gradient(135deg, hsl(224 76% 48%) 0%, hsl(271 81% 56%) 50%, hsl(142 76% 36%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(240 8% 8%) 0%, hsl(240 6% 12%) 100%);
+    
+    /* Shadows and glows */
+    --shadow-glow: 0 0 40px hsl(224 76% 48% / 0.3);
+    --shadow-card: 0 8px 32px hsl(240 10% 4% / 0.5);
+    --shadow-floating: 0 20px 60px hsl(240 10% 4% / 0.4);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 12px;
 
     --sidebar-background: 0 0% 98%;
 
